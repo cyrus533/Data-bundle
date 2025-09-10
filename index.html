@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Bundles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 15px;
+      background: #f5f5f5;
+      min-height: 100vh;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 20px 0 10px;
+      padding: 10px;
+      border-radius: 6px;
+      color: #fff;
+    }
+
+    .bundle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      padding: 12px 15px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .bundle span {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .network {
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    .mtn {
+      background: #ffcb05;
+      color: #000;
+    }
+
+    .vodafone {
+      background: #e60000;
+      color: #fff;
+    }
+
+    .bundle button {
+      background: #28a745;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .bundle button:hover {
+      background: #218838;
+      transform: scale(1.05);
+    }
+
+    /* Cart button */
+    #cart-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+
+    #cart-btn:hover {
+      background: #0056b3;
+    }
+
+    /* Customer care */
+    #customer-care {
+      margin-top: 40px;
+      padding: 15px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    #customer-care a {
+      color: #007bff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MTN Bundles -->
+  <h2 style="background:#ffcb05; color:#000;">MTN Bundles</h2>
+  <div class="bundle"><span><span class="network mtn">MTN</span> 1GB - 6 GHC</span><button onclick="addToCart('MTN 1GB - 6 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network mtn">MTN</span> 2GB - 11 GHC</span><button onclick="addToCart('MTN 2GB - 11 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network mtn">MTN</span> 3GB - 17 GHC</span><button onclick="addToCart('MTN 3GB - 17 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network mtn">MTN</span> 4GB - 22 GHC</span><button onclick="addToCart('MTN 4GB - 22 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network mtn">MTN</span> 5GB - 26 GHC</span><button onclick="addToCart('MTN 5GB - 26 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network mtn">MTN</span> 6GB - 31 GHC</span><button onclick="addToCart('MTN 6GB - 31 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network mtn">MTN</span> 7GB - 35 GHC</span><button onclick="addToCart('MTN 7GB - 35 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network mtn">MTN</span> 8GB - 45 GHC</span><button onclick="addToCart('MTN 8GB - 45 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network mtn">MTN</span> 9GB - 50 GHC</span><button onclick="addToCart('MTN 9GB - 50 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network mtn">MTN</span> 10GB - 50 GHC</span><button onclick="addToCart('MTN 10GB - 50 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network mtn">MTN</span> 15GB - 70 GHC</span><button onclick="addToCart('MTN 15GB - 70 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network mtn">MTN</span> 20GB - 90 GHC</span><button onclick="addToCart('MTN 20GB - 90 GHC')">Add</button></div>
+
+  <!-- Vodafone Bundles -->
+  <h2 style="background:#e60000;">Vodafone Bundles</h2>
+  <div class="bundle"><span><span class="network vodafone">Voda</span> 5GB - 25 GHC</span><button onclick="addToCart('Vodafone 5GB - 25 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network vodafone">Voda</span> 10GB - 50 GHC</span><button onclick="addToCart('Vodafone 10GB - 50 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network vodafone">Voda</span> 15GB - 68 GHC</span><button onclick="addToCart('Vodafone 15GB - 68 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network vodafone">Voda</span> 20GB - 85 GHC</span><button onclick="addToCart('Vodafone 20GB - 85 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network vodafone">Voda</span> 30GB - 125 GHC</span><button onclick="addToCart('Vodafone 30GB - 125 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network vodafone">Voda</span> 40GB - 147 GHC</span><button onclick="addToCart('Vodafone 40GB - 147 GHC')">Add</button></div>
+  <div class="bundle"><span><span class="network vodafone">Voda</span> 50GB - 220 GHC</span><button onclick="addToCart('Vodafone 50GB - 220 GHC')">Add</button></div>
+
+  <!-- Cart button -->
+  <button id="cart-btn" onclick="goToWhatsApp()">Go to WhatsApp Cart</button>
+
+  <!-- Customer Care -->
+  <div id="customer-care">
+    <p>💬 Need help? Contact Customer Care:</p>
+    <p><a href="https://wa.me/233502376541" target="_blank">0502376541</a></p>
+  </div>
+
+  <script>
+    let cart = [];
+
+    function addToCart(item) {
+      cart.push(item);
+      alert(item + " added to cart ✅");
+    }
+
+    function goToWhatsApp() {
+      if (cart.length === 0) {
+        alert("Your cart is empty! Please add a bundle first.");
+        return;
+      }
+      let message = "Hello, I want to buy these bundles:%0A";
+      cart.forEach((item, index) => {
+        message += (index+1) + ". " + item + "%0A";
+      });
+      window.open("https://wa.me/233502376541?text=" + message, "_blank");
+    }
+  </script>
+
+</body>
+  </html>
